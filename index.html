@@ -1,0 +1,153 @@
+<html>
+
+<head>
+<title> Research Intern </title>
+</head>
+<script>
+	function checkSelection()
+	{
+	if(action.city.value=='Select City')
+	alert('City is required');
+	 if(action.category.value=='Select Category')
+	alert('Category  is required');
+	}
+</script>
+
+<style>
+	.theme1:hover
+	{
+	background:black;
+	font-weight:bold;
+	color:white;
+	}
+	.theme2
+	{
+	background:red;
+	font-weight:bold;
+	color:white;
+	}
+	.theme3
+	{
+	font-weight:bold;
+	color:white;
+	}
+	
+</style>
+
+<body bgcolor=#F4F7F6>
+<table width="100%">
+<tr align=center width="100%">
+<td width="100%">
+<h1>Research Intern</h1>
+<img src="images/logo.png" >
+</td>
+</tr>
+</table>
+
+
+<table border=0 width="100%">
+<tr align=center  height="60" >
+	<td bgcolor=46BAAC   width="20%"class="theme1"><a href="index.html"><b>Home</b></a></td>
+	<td bgcolor=46BAAC width="20%" class="theme1"><a href="aboutus.html"><b>About Us</b></a></td>
+	<td bgcolor=46BAAC width="20%" class="theme1"><a href="help.html"><b>Help</b></a></td>
+	<td bgcolor=46BAAC width="20" class="theme1"><a href="mailto:">Query</a></td>
+	<td bgcolor=black width="20%"  class="theme1 theme2"><a href="maplogin.html"><b>Login</b></a></td>
+</tr>
+</table>
+<table width="100%">
+<tr height="50">
+</tr>
+<tr align=center width="100%">
+<td width="100%">
+<h2><b><i>Find a Job as per your requirement</i><b/></h2>
+</td>
+</tr>
+</table>
+
+<form name="action">
+
+<table align=center bgcolor=black height="500" width="400">
+<tr align=center>
+<td width="100%" class="theme3" >
+Select the City 
+</td> 
+</tr>
+
+<tr align=center>
+<td width="100%" class="theme3" >
+<select name="city">
+<option>Select City</option>
+<option>Indore</option>
+<option>Mumbai</option>
+<option>Delhi</option>
+<option>Banglore</option>
+<option>Hyderabad</option>
+</select>
+</td>
+</tr>
+
+<tr align=center>
+<td width="100%" class="theme3" >
+Select the Category
+</td>
+</tr>
+
+
+<tr align=center>
+<td width="100%" class="theme3" >
+<select name="category">
+<option>Select Category</option>
+<option>Software Development</option>
+<option>Data Mining</option>
+<option>Web development</option>
+<option>Software Testing</option>
+<option>Management</option>
+<option>Graphic Designing</option>
+</select>
+</td>
+</tr>
+
+<tr align=center>
+<td width="100%" class="theme3" >
+<select>
+<option>Years Of Experience</option>
+<option>1 year</option>
+<option>2 years</option>
+<option>3 years</option>
+<option>4 years</option>
+<option>5 or More</option>
+<option>No Experience</option>
+</select>
+</td>
+</tr>
+
+<tr align=center>
+<td width="100%" class="theme3" >
+Upload Your Resume
+</td>
+</tr>
+
+
+
+<tr align=center>
+<td width="100%" class="theme3" >
+<input type="file" name="pic" accept="pdf/*,doc/*">
+</td>
+</tr>
+
+
+<tr align=center >
+<td align=center>
+<input type=submit onClick="checkSelection()">
+<input type=reset>
+</td>
+</tr>
+
+</table>
+
+</form>
+
+
+<body/>
+
+</html>
